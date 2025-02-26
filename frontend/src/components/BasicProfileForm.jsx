@@ -98,7 +98,7 @@ const BasicProfileContainer = forwardRef((props, ref) => {
     }),
   }));
 
-  console.log(avatar);
+  console.log(yearOfExp);
 
   return (
     <motion.div className="bg-gray-800  bg-opacity-50 pr-6 rounded-lg mb-4 ">

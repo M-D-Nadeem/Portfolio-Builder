@@ -265,7 +265,7 @@ const ExamplePortfoliosPage = () => {
             </h1>
             
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Explore beautiful portfolios created by talented developers. Get inspired and create your own today.
+              Discover stunning portfolios crafted by brilliant developers. Get inspired and start building your masterpiece today! 🚀
             </p>
             
             <motion.button

@@ -40,7 +40,7 @@ const Loading = () => {
           }}
           className="mt-4 text-purple-500 text-sm font-medium"
         >
-          Loading Hai Ji..
+          Hold tight, magic is loading... ✨
         </motion.p>
       </div>
     </div>

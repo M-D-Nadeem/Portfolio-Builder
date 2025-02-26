@@ -140,7 +140,7 @@ export default function Header() {
   
   return (
     <div className="relative z-30">
-      <nav className="p-4 text-white">
+      <nav className="p-4 px-8 text-white">
         <div className="container mx-auto flex justify-between items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -149,7 +149,7 @@ export default function Header() {
           >
             <Link to="/" className="text-2xl font-bold text-indigo-400 flex items-center">
               <code className="mr-2">&lt;/&gt;</code>
-              PortDev
+              DevFolio
             </Link>
           </motion.div>
 

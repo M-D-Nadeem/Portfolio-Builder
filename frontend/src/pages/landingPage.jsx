@@ -281,16 +281,15 @@ const PortfolioLanding = () => {
             animate={{ opacity: 1, y: 0 }}
             className="mb-16"
           >
-            <h2 className="text-lg mb-4 text-gray-400 tracking-wide">Welcome to PortDev 👋</h2>
+            <h2 className="text-lg mb-4 text-gray-400 tracking-wide">Welcome to DevFolio 👋</h2>
             <h1 className="text-6xl font-bold mb-6 leading-tight">
-              Create Your{" "}
+            Build Your{" "}
               <span className="bg-gradient-to-r from-purple-400 to-blue-500 text-transparent bg-clip-text">
                 Developer Portfolio
               </span>
             </h1>
             <p className="text-gray-400 max-w-3xl mx-auto mb-10 text-lg">
-              Showcase your skills and projects with a stunning portfolio website—quick, easy, and elegant.
-            </p>
+            Unleash your potential with a sleek, professional portfolio—effortless, stunning, and built to impress! 🚀            </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
               <motion.button
@@ -322,25 +321,25 @@ const PortfolioLanding = () => {
             <FeatureCard
               icon={BsPalette2}
               title="Modern Design"
-              features={["Responsive Layout", "Dark Mode", "Animated UI"]}
+              features={["Fully Responsive", "Dark Mode", "Smooth & Engaging Animations"]}
               className="border-purple-500"
             />
             <FeatureCard
               icon={BsLightning}
               title="Easy to Use"
-              features={["Quick Setup", "Simple Interface", "Live Preview"]}
+              features={["Instant Setup", "Intuitive Interface", "Real-Time Preview"]}
               className="border-blue-500"
             />
             <FeatureCard
               icon={BsGear}
               title="Customizable"
-              features={["Custom Themes", "Layout Options", "Font Choices"]}
+              features={["Unique Themes", "Tailored Sections ", "Interactive Elements"]}
               className="border-green-500"
             />
             <FeatureCard
               icon={BsSpeedometer}
               title="SEO Optimized"
-              features={["Meta Tags", "Fast Loading", "Best Practices"]}
+              features={["Smart Meta Tags", "Fast Loading", "SEO Best Practices"]}
               className="border-red-500"
             />
           </div>

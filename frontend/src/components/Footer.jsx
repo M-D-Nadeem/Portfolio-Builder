@@ -19,8 +19,8 @@ const Footer = () => {
             className="text-xl font-bold"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-blue-400">Port</span>
-            <span className="text-white">Dev</span>
+            <span className="text-blue-400">Dev</span>
+            <span className="text-white">Folio</span>
           </motion.div>
           <motion.p 
             className="text-sm text-gray-400 flex items-center"
@@ -48,7 +48,7 @@ const Footer = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            <Heart className="mr-1 h-4 w-4 text-red-500" /> © {currentYear} PortDev. All rights reserved.
+            <Heart className="mr-1 h-4 w-4 text-red-500" /> © {currentYear} DevFolio. All rights reserved.
           </motion.div>
         </div>
       </div>

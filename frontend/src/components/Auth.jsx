@@ -111,7 +111,7 @@ export const SignUp = () => {
         >
           <motion.div variants={itemVariants} className="text-center mb-6">
             <h1 className="text-3xl font-bold text-indigo-400">Create Account</h1>
-            <p className="text-gray-300 mt-1">Join the PortDev community 💜</p>
+            <p className="text-gray-300 mt-1">Join the DevFolio community 💜</p>
           </motion.div>
 
           <motion.div
@@ -180,7 +180,7 @@ export const SignUp = () => {
                     required
                   />
                 </div>
-                <p className="text-xs text-gray-400 mt-1">This will be your unique identifier: portdev.com/username</p>
+                <p className="text-xs text-gray-400 mt-1">This will be your unique identifier: DevFolio.com/username</p>
               </div>
 
               <div className="mb-4 w-full">
@@ -274,7 +274,7 @@ export const SignUp = () => {
           </motion.div>
           
           <motion.div variants={itemVariants} className="text-center text-gray-500 text-sm mt-4">
-            Built with 💜 by PortDev
+            Built with 💜 by DevFolio
           </motion.div>
         </motion.div>
       </div>
@@ -422,13 +422,14 @@ export const SignIn = () => {
                     required
                   />
                 </div>
-                <div className="flex justify-end mt-1">
+                {/* Forgot Password */}
+                {/* <div className="flex justify-end mt-1">
                   <motion.span whileHover={{ color: '#a78bfa' }}>
                     <Link to="/forgot-password" className="text-indigo-400 text-sm hover:underline">
                       Forgot password?
                     </Link>
                   </motion.span>
-                </div>
+                </div> */}
               </div>
 
               <motion.button
@@ -455,7 +456,7 @@ export const SignIn = () => {
           </motion.div>
           
           <motion.div variants={itemVariants} className="text-center text-gray-500 text-sm mt-4">
-            Built with 💜 by PortDev
+            Built with 💜 by DevFolio
           </motion.div>
         </motion.div>
       </div>
