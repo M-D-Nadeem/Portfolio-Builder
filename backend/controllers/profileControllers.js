@@ -2,9 +2,7 @@ import Profile from "../model/profileSchema.js"
 
 const createProfile = async (req, res) => {
     try {
-        const profile = new Profile(req.body);
-        console.log(req.body);
-        
+        const profile = new Profile(req.body);        
         await profile.save();
         res.status(201).json({success:true,profile});
     } catch (error) {
