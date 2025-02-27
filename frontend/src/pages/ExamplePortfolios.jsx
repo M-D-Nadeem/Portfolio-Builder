@@ -36,8 +36,8 @@ const PortfolioCard = ({ portfolio }) => {
         <div className="flex items-center gap-3">
           <div className="relative">
             <img 
-              src={portfolio.basicProfile?.avatar || "/api/placeholder/50/50"} 
-              alt={portfolio.basicProfile?.fullName || "User"} 
+              src={portfolio?.basicProfile?.avatar || "/api/placeholder/50/50"} 
+              alt={portfolio?.basicProfile?.fullName || "User"} 
               className="w-10 h-10 rounded-full object-cover" 
             />
             <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-gray-900"></div>
@@ -50,7 +50,7 @@ const PortfolioCard = ({ portfolio }) => {
                 Featured
               </div>
             )} */}
-            <h3 className="font-medium text-white">{portfolio.basicProfile?.fullName || "User"}</h3>
+            <h3 className="font-medium text-white">{portfolio?.basicProfile?.fullName || "User"}</h3>
             <p className="text-sm text-blue-400">
               {portfolio.basicProfile?.titles && portfolio.basicProfile.titles.length > 0 
                 ? portfolio.basicProfile.titles[0] 
@@ -116,6 +116,7 @@ const ExamplePortfoliosPage = () => {
       try {
         setLoading(true);
         const response = await axiosInstance.get('/profile/get');
+        console.log(response);
         
         if (response.data.success) {
             const deployedProfiles = response.data.profiles.filter(profile => profile.deployed);
@@ -135,7 +136,7 @@ const ExamplePortfoliosPage = () => {
     
     fetchPortfolios();
   }, []);
-
+  
   useEffect(() => {
     const preloadResources = async () => {
       try {

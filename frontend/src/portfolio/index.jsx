@@ -17,6 +17,7 @@ import axiosInstance from "../helper/axiosInstance";
 import Education from "./Education";
 
 export default function PortfolioMain() {
+        const { name } = useParams();
   const { id } = useParams(); // Extract the portfolio ID from URL
   const [loading, setLoading] = useState(true);
   const [portfolioData, setPortfolioData] = useState(null);
@@ -29,8 +30,12 @@ export default function PortfolioMain() {
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
+    // let name="";
+    if(user){
+      name=user.fullName
+    }   
+    console.log(name);
     
-    const name=user.fullName   
     const fetchPortfolio = async () => {
       try {
         const response = await axiosInstance.get(`/profile/deployed/get/${name}/${id}`);

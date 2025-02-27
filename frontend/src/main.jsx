@@ -20,7 +20,6 @@ const router = createBrowserRouter(
       <Route index element={<PortfolioLanding />} />
       <Route path="signup" element={<SignUp />} />
       <Route path="signin" element={<SignIn />} />
-      <Route path="form" element={<InputForm />} />
       <Route path="previewProfile/:id" element={<PortfolioPreview />} />
       <Route path="inputForm" element={<InputForm />} />
       <Route path="examplePortfolio" element={<ExamplePortfoliosPage />} />
