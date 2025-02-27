@@ -160,7 +160,7 @@ const Navbar = ({data}) => {
               transition={{ delay: 0.3 }}
             >
               <motion.a
-                href="https://me.cyberboyayush.in/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setNav(false)}
