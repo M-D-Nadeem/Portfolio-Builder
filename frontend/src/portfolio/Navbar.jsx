@@ -135,7 +135,12 @@ const Navbar = ({data}) => {
           transition={{ type: "spring", damping: 20 }}
         >
           <ul className="space-y-8 mt-20">
-            {["about", "portfolio", "contact"].map((section, index) => (
+            {["About",
+            "Education",
+            "Skills",
+            "Experience",
+            "Projects",
+            "Coding",].map((section, index) => (
               <motion.li
                 key={section}
                 initial={{ opacity: 0, x: 20 }}
@@ -154,24 +159,7 @@ const Navbar = ({data}) => {
                 </ScrollLink>
               </motion.li>
             ))}
-            <motion.li
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-            >
-              <motion.a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setNav(false)}
-                className="inline-block px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-purple-600/20 to-pink-600/20 
-                                         border border-purple-500 rounded-xl hover:from-purple-600/30 hover:to-pink-600/30"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Visit Profiles
-              </motion.a>
-            </motion.li>
+            
           </ul>
         </motion.div>
       </div>

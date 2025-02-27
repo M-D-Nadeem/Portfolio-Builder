@@ -91,16 +91,7 @@ const Hero = ({data}) => {
             {data.basicProfile.bio}
             </p>
             <div className="flex gap-4">
-              {/* <motion.a
-                href="https://me.cyberboyayush.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-purple-600 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
-              >
-                Visit Profiles
-              </motion.a> */}
+              
               <div className="flex gap-3">
               {socialLinksWithIcons.map(({ platform, username, icon: Icon }, index) => (
         <motion.a
