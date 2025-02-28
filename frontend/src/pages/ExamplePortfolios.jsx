@@ -265,9 +265,14 @@ const ExamplePortfoliosPage = () => {
               <span className="text-purple-500">Portfolios</span>
             </h1>
             
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            {/* <p className="text-gray-400 max-w-2xl mx-auto">
               Discover stunning portfolios crafted by brilliant developers. Get inspired and start building your masterpiece today! 🚀
-            </p>
+            </p> */}
+
+            <p className="text-gray-400 max-w-2xl mx-auto">
+   Ready to shine? 🌟 Deploy your portfolio now and get a chance to be featured among top developers!
+</p>
+
             
             <motion.button
               whileHover={{ scale: 1.05 }}
